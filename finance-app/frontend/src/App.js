@@ -25,6 +25,7 @@ import Investments from './pages/Investments';
 import Reports from './pages/Reports';
 import Settings from './pages/Settings';
 import Profile from './pages/Profile';
+import KPIs from './pages/KPIs';
 
 // Data Connection Pages
 import Connections from './pages/Connections';
@@ -165,6 +166,12 @@ const App = () => {
             <PrivateRoute exact path="/reports">
               <MainLayout>
                 <Reports />
+              </MainLayout>
+            </PrivateRoute>
+            
+            <PrivateRoute exact path="/kpis">
+              <MainLayout>
+                <KPIs />
               </MainLayout>
             </PrivateRoute>
             
